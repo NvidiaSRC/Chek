@@ -44,9 +44,7 @@
       const password = document.getElementById('password').value;
       const secret = document.getElementById('secret-code').value;
 
-const endpoint = isRegister 
-  ? 'https://your-render-url.onrender.com/register' 
-  : 'https://your-render-url.onrender.com/login';
+      const endpoint = isRegister ? '/register' : '/login';
       const payload = { username, password };
       if (isRegister) payload.secret = secret;
 
