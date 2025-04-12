@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(145deg, #f0f0f0, #e0e0e0); /* opsional: terang biar teks hitam jelas */
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box, .container {
+  background: rgba(255, 255, 255, 0.8); /* ganti blur jadi putih semi transparan */
+  padding: 30px 40px;
+  border-radius: 12px;
+  backdrop-filter: none;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
+  color: black;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #eee;
+  color: black;
+}
+
+input[type="submit"], button {
+  background-color: #1e90ff;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 15px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #187bcd;
+  transform: scale(1.05);
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
